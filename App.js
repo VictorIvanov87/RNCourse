@@ -5,7 +5,6 @@ import {
 	View,
 	Button,
 	TextInput,
-	ScrollView,
 	FlatList,
 } from "react-native";
 
@@ -53,36 +52,36 @@ export default function App() {
 
 const styles = StyleSheet.create({
 	appContainer: {
-		paddingTop: 50,
+		flex: 1,
 		paddingHorizontal: 16,
-		flex: 1,
+		paddingTop: 50,
 	},
-	inputContainer: {
-		flex: 1,
-		flexDirection: "row",
-		justifyContent: "space-between",
-		alignItems: "center",
-		marginBottom: 24,
-		borderBottomWidth: 1,
-		borderBottomColor: "#ccc",
-	},
-	textInput: {
-		borderWidth: 1,
-		borderColor: "#ccc",
-		width: "70%",
+	goalItem: {
+		backgroundColor: "#5e0acc",
+		borderRadius: 6,
+		margin: 8,
 		padding: 8,
-		marginRight: 8,
+	},
+	goalText: {
+		color: "white",
 	},
 	goalsContainer: {
 		flex: 5,
 	},
-	goalItem: {
-		margin: 8,
-		padding: 8,
-		borderRadius: 6,
-		backgroundColor: "#5e0acc",
+	inputContainer: {
+		alignItems: "center",
+		borderBottomColor: "#ccc",
+		borderBottomWidth: 1,
+		flex: 1,
+		flexDirection: "row",
+		justifyContent: "space-between",
+		marginBottom: 24,
 	},
-	goalText: {
-		color: "white",
+	textInput: {
+		borderColor: "#ccc",
+		borderWidth: 1,
+		marginRight: 8,
+		padding: 8,
+		width: "70%",
 	},
 });
