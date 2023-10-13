@@ -15,7 +15,7 @@
 	"plugins": ["react", "react-native"],
 	"extends": ["eslint:recommended", "plugin:react/recommended"],
 	"rules": {
-		"react/prop-types": "ignore",
+		"react/prop-types": 0,
 		"react/jsx-uses-react": "off",
 		"react/react-in-jsx-scope": "off",
 		"react-native/no-unused-styles": 2,
